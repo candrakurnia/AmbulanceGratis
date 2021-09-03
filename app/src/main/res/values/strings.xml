@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ambulance Gratis</string>
+    <string name="deskripsi">Ambulance Gratis yang disediakan pemerintah Kota Bandar Lampung</string>
+    <string name="enable_gps_setting">need gps</string>
+    <string name="isi_switch">Nyalakan GPS untuk mengetahui lokasi anda</string>
+
+    <string name="location_content">This app wants to change your device settings use GPS,Wi-Fi and cell networks for your location</string>
+</resources>

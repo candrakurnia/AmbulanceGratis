@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="24dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_pertama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="43dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi, "
+            android:textColor="@color/merah"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="32sp"/>
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:textColor="@color/merah"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="32sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_salam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_pertama"
+        android:text="Kami siap membantu anda hari ini"
+        android:textSize="15sp"
+        android:textColor="@color/biru"
+        android:fontFamily="@font/poppins"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_kedua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_salam"
+        android:orientation="vertical"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lokasi Terkini"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="18sp"
+            android:textColor="@color/merah"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Otomatis Mendeteksi Lokasi Anda"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:textColor="@color/biru"/>
+
+
+
+        <!--<Switch
+                android:id="@+id/sw_loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/isi_switch"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/merah"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />-->
+
+        <TextView
+            android:id="@+id/tv_lokasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/lokasi"
+            android:drawablePadding="8dp"
+            android:paddingStart="8dp"
+            android:textColor="@color/putih"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_pesan"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_below="@+id/ll_kedua"
+        android:layout_marginTop="64dp"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="16dp"
+        app:cornerRadius="32dp"
+        android:paddingBottom="20sp"
+        android:text="Pesan\nAmbulance"
+        android:textColor="@color/putih"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_group_10"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>
